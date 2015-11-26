@@ -1,8 +1,8 @@
 # laravel-jmespath
 
-A Laravel 5 wrapper for easy use of the [jmespath.php](https://github.com/jmespath/jmespath.php) library.  The jmespath.php library is an implementation of the [JMESPath](http://jmespath.org/) specification.
+A Laravel 5 wrapper for use of the [jmespath.php](https://github.com/jmespath/jmespath.php) library.  The jmespath.php library is an implementation of the [JMESPath](http://jmespath.org/) specification.
 
-This package also provides Artisan commands to pre-compile and manage your JMESpath expressions.
+This package also provides Artisan commands to pre-compile and manage your JMESPath expressions.
 
 ## Installation
 
@@ -71,14 +71,7 @@ $result = jmes($expression, $data);
 
 Two Artisan commands are available with the package:
 
-```
-$ php artisan
- jmes
-  jmes:clear           Delete all previously compiled JMESPath expressions
-  jmes:compile         Compile and cache JMESpath expressions
-```
-
-#### `jmes.compile`
+#### `jmes:compile`
 
 This compiles and caches JMESPath expressions.  Expressions can be sourced in multiple ways:
 
@@ -103,7 +96,7 @@ This compiles and caches JMESPath expressions.  Expressions can be sourced in mu
      > foo.*.baz
     ```
 
-#### `jmes.clear`
+#### `jmes:clear`
 
 This will delete any previously compiled expressions:
 
