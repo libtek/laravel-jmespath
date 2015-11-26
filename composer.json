@@ -1,0 +1,35 @@
+{
+  "name": "libtek/laravel-jmespath",
+  "description": "jmespath.php service provider for Laravel 5",
+  "keywords": [
+    "jmespath",
+    "laravel",
+    "jmes"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ben Tischler",
+      "email": "btischler@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "mtdowling/jmespath.php": "~2.2",
+    "illuminate/support": "~5.1",
+    "illuminate/config": "~5.1",
+    "illuminate/console": "~5.1",
+    "illuminate/filesystem": "~5.1",
+    "illuminate/container": "~5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Libtek\\Jmes\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
