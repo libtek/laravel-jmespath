@@ -34,18 +34,6 @@ In `config/app.php`, add the facade to the `$aliases` array:
 ],
 ```
 
-### Register the commands
-
-If you'd like to make use of the Artisan commands, in `app/Console/Kernel.php`, add them to the `$commands` array:
-
-```php
-protected $commands = [
-    // ...
-    \Libtek\Jmes\Console\JmesCompileCommand::class,
-    \Libtek\Jmes\Console\JmesClearCommand::class,
-];
-```
-
 ### Publish the configuration file
 
 If you'd like to modify the default configuration values or define expressions to pre-compile, publish the package config file:
