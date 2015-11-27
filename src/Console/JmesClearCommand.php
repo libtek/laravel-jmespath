@@ -1,5 +1,4 @@
 <?php
-
 namespace Libtek\Jmes\Console;
 
 use Illuminate\Console\Command;

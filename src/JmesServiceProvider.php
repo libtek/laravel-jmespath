@@ -1,5 +1,4 @@
 <?php
-
 namespace Libtek\Jmes;
 
 use Illuminate\Support\ServiceProvider;
